@@ -8,4 +8,3 @@ use Liberu\Foundation\SettingsApi\Http\Controllers\StatusController;
 Route::prefix('api/v1/settings')->middleware('api')->group(function (): void {
     Route::get('/status', StatusController::class)->name('settings-api.status');
 });
-
